@@ -1,0 +1,31 @@
+.modal {
+  width: 40%;
+  height: 30vh;
+  width: 40%;
+  height: 30vh;
+  border: none;
+  border-radius: 10px;
+  background-color: #9895ad;
+}
+
+.modal-error {
+  background-color: rgb(211, 129, 129) !important;
+}
+
+.modal > header {
+  margin: 0;
+}
+.modal > main {
+  text-align: center;
+}
+
+.cancelCross {
+  position: relative;
+  top: -4vh;
+  left: 50%;
+  cursor: pointer;
+}
+
+.title {
+  margin: 0;
+}

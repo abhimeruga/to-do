@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -9,7 +9,7 @@
 }
 
 html {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   line-height: 1.5;
 
   color: #ebe7ef;
@@ -51,7 +51,7 @@ header {
   --th-color: #0f172a;
   --pill-bg: #eef2ff;
   --pill-color: #3730a3;
-  --font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI";
+  --font-family: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI';
 }
 
 /* ========== Container ========== */
@@ -111,7 +111,9 @@ header {
 
 /* ========== Rows & cells ========== */
 .nice-table tbody tr {
-  transition: background 150ms ease, transform 120ms ease;
+  transition:
+    background 150ms ease,
+    transform 120ms ease;
 }
 
 .nice-table tbody tr:nth-child(even) {
@@ -226,14 +228,16 @@ header {
   padding-right: 36px; /* room for arrow */
 }
 .nice-table thead th.sortable::after {
-  content: "▾";
+  content: '▾';
   position: absolute;
   right: 12px;
   top: 50%;
   transform: translateY(-50%);
   font-size: 12px;
   color: var(--muted);
-  transition: transform 120ms ease, opacity 120ms ease;
+  transition:
+    transform 120ms ease,
+    opacity 120ms ease;
   opacity: 0.75;
 }
 .nice-table thead th.sortable.asc::after {
@@ -376,7 +380,9 @@ header {
   border: 1px solid #cbd5e1;
   border-radius: 6px;
   box-sizing: border-box;
-  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease;
 }
 
 .input::placeholder {
@@ -401,4 +407,9 @@ header {
   background-color: #f8fafc;
   color: #64748b;
   cursor: not-allowed;
+}
+
+dialog::backdrop {
+  background-color: #101721;
+  opacity: 0.8;
 }

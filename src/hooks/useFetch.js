@@ -1,5 +1,4 @@
-import { useEffect, useState } from "react";
-import { fetchTodoList } from "../http/fetch";
+import { useEffect, useState } from 'react';
 
 export function useFetch(fetchFn) {
   const [loading, setLoading] = useState(false);
@@ -14,7 +13,7 @@ export function useFetch(fetchFn) {
         setData(res);
         setLoading(false);
       } catch (err) {
-        setErrorState({ error: err, title: "Someting failied with GetTodod" });
+        setErrorState({ error: err, title: 'Someting failied with GetTodod' });
         setLoading(false);
       }
     })();
